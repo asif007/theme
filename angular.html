@@ -1,0 +1,111 @@
+<!doctype html>
+<html >
+  <head>
+   <link href="css/bootstrap.min.css"rel="stylesheet">
+    <script src="js/angular.js"> </script>
+        <script src="js/custom.js"> </script>
+  </head>
+  <body ng-app="app"  >
+      <div class="container" >
+          <div class="page-header" >
+             <input type ="text" ng-model="name">
+              <p>{{name}}</p>
+    
+          </div>
+          <div ng-controller="naming">
+              <strong>looping with object</strong>
+                        <ul>
+                      <li ng-repeat="x in conn">
+                        {{ x.Name + ', ' + x.Country+ ', '+x.City }}
+                      </li>
+                   </ul>
+          </div>
+          <div>
+              <button ng-click="count=count+1">Button</button>
+              <strong>  {{count}}</strong>
+          </div>
+          <div ng-controller="vegetable">
+              <button ng-click="spice1('asif ahmed ')">spice</button>
+              <button ng-click="spice2()">chili</button>
+              <p>{{spice}}</p>
+          </div>
+          <div ng-controller="data-hide">
+              <button ng-click="toggle()">click</button>
+              <p ng-hide="hides">
+                  Firstname<input type="text" ng-model="name1" ng-show="true"><br/>
+                  lastname<input type="text" ng-model="name2"><br/>
+                  <strong>{{name1+ '  '+name2}}</strong>
+              </p>
+          </div>
+          <p>table data shoiwing</p>
+          <div ng-controller="tabledatabyjson">
+              <table>
+                  <tr ng-repeat="x in data | orderBy:'Country'">
+                      
+                      <td>{{x.Name}}</td>
+                      <td>{{x.Country |uppercase}}</td>
+                      <td>{{x.City |lowercase}}</td>
+                  </tr>
+              </table>
+          </div>
+          <div ng-controller="water">
+              firstname<p><input type="text" ng-model="water_first"></p>
+              <p>{{water_first}}</p>
+              
+          </div>
+          <div ng-controller="uppercases">
+              <p>for uppeercase conversion</p>
+              <p><strong>{{firstupper|uppercase}}</strong></p>      
+              <p>for lowercase conversion</p>
+              <p>{{firstlower|lowercase}}</p> 
+                    
+          </div>
+          <div>
+              quantity<input type="number" ng-model="qty"><br/>
+              cost<input type="number" ng-model="cost"><br/>
+              <strong>Total = {{qty*cost |currency}}</strong>
+              
+          </div>
+          <section ng-controller="default">
+              <p>number calculation</p>
+              <p><input type="number" ng-model="nb1" placeholder="enter first number" style="height:40px">               </p>
+              <p><input type="number" ng-model="nb2" placeholder="enter second number"></p>
+              <strong>{{nb1*nb2}}</strong>
+              {{txt}}
+          </section>
+           <section ng-controller="default2" ng-init="person={first:'asif',last:'ibna'};
+             con=[{name:'dhaka',country:'bangladedsh'},{name:'dhaka',country:'bangladedsh'},
+             {name:'dhaka',country:'bangladedsh'},{name:'dhaka',country:'bangladedsh'},
+             {name:'dhaka',country:'bangladedsh'},{name:'dhaka',country:'bangladedsh'},]
+             ">
+               <ul>
+                   <li ng-repeat="x in con">
+                       {{x.name+' '+x.country}}
+                       
+                   </li>
+               </ul>
+              <p>number calculation</p>
+              <p><input type="number" ng-model="nb1" placeholder="enter first number"></p>
+              <p><input type="number" ng-model="nb2" placeholder="enter second number"></p>
+              <strong>{{nb1*nb2}}</strong>
+               {{txt2}}
+          jjjjjjjjjjjjjjjjjjjjjj
+               <p ng-bind="person.first+' '+person.last"></p>
+          </section>
+          jkhhhhhhhhhhhhhhhhhhhhh
+          <div ng-controller="name" ng-init="cost=10;qya=23;first='khan';last='akbar'">
+             <p> FirstName<input type="text" ng-model="firstname" placeholder="first"></p>
+             <p> LastName<input type="text" ng-model="lastname"></p>
+             <p>{{firstname}} {{lastname}}</p>
+              <span ng-bind="first+' '+ last"></span>
+              <p>{{cost*qya}} </p>
+              
+          </div>
+          
+      </div>
+      
+      
+     
+  
+  </body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               

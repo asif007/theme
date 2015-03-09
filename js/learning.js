@@ -1,0 +1,13 @@
+angular.module("learning",['ngRoute','ngResource'])
+.config(function($routeProvider,$locationProvider){
+ $routeProvider
+        .when('/contacts',{
+        controller:'ListController',
+        templateUrl:'list.html'
+ })
+       .when('contact/new',{
+        controller:'NewController',
+        templateUrl:'learning.html'
+    });
+    $locationProvider.html5Mode(true);
+});

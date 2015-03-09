@@ -1,0 +1,104 @@
+i.LargeIcon{font-size: 45px;padding-left: 50px;padding-right: 65px;}
+.asif{z-index:9990;}
+.smallIcons{font-size:37px;}
+ul{margin:0;padding:0;list-style-type: none;}
+.overlay_wrap{position: relative;width:200px;height: 200px;}
+.overlay_wrap ul{position:absolute;left:5%;top:-5000%;transition:500ms;}
+.overlay_wrap ul li{display:inline-block;float: left;margin-right:10px;margin-left:-5px;}
+.overlay_wrap ul li a{display: inline-block;height:22px;width:22px;background: #fff;border-radius:50%;text-align: center;opacity: .8;color:#a5ad25;}
+.overlay_wrap ul li a i{display: inline-block}
+.overlay_wrap ul li a:hover{opacity: 1;}
+.overlay_wrap:hover .overlays{display: block;opacity:.6;}
+.overlays{background: #a5ad25;width:100%;height:100%;position:absolute;left:0;top:0;opacity:.4;display:none;transition: all 500ms ease 0s;border-radius:50%;}
+.overlay_wrap:hover ul{top:50%}
+.blue{ color:#E1ED00}
+ ul.asifs{list-style-type: circle;padding-left: 30px;}
+ul.asifs li a{color:purple;text-decoration: none;}
+#col_height{height:254px;}
+.underline_in_menu
+{
+    display: inline-block;
+    padding: 6px 0px 4px;
+    margin: 0px 8px 0px;
+    position: relative;
+}
+
+.underline_in_menu:before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    border-bottom: 3px solid black;
+    bottom: 2px;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.2s ease-in;
+    transition: transform: 0.2s ease-in;
+}
+
+.underline_in_menu:hover:before
+{
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.margintop{margin-top: 50px;}
+.transition{margin:100px;}
+.view {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../img/Asif.jpg) no-repeat center center
+}
+.view .mask, .view .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}

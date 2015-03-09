@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+     <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Mcq Test</title>
+
+    <!-- Bootstrap -->
+  
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+       <link href="css/uikit.min.css" rel="stylesheet"/>
+          <link href="css/style.css" rel="stylesheet"/>
+       <link href="css/animate.css" rel="stylesheet"/>
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+ 
+<p id="def">Accessing a function without (), will return the function definition:</p>
+<p id="demo"></p>
+    <p id="demoo"></p>
+    <button onclick="getElementById('def').innerHTML=Date();">the time is ?</button>
+    <button onclick="this.innerHTML=Date();">date</button>
+<script>
+function toCelsius(f) {
+    return (5/9) * (f-32);
+}
+myfunction();
+ function myfunction(){
+   names="asif ahmed is, a man gdg";
+ }
+//document.getElementById("demoo").innerHTML = names;
+document.getElementById("demo").innerHTML = toCelsius(342);
+var obj=new String("asuf");
+  var str = "a,b,c,d,e,f";
+    var arr = str.split(",");
+ var text="";
+ for(i=0;i<names.length;i++)
+ {
+   if(names[i]==",")
+       continue;
+     else text+=names[i];
+ }
+var x=1234e-3;
+var my=343;
+while(my!=Infinity){
+ my+=my*my;
+}
+  //  document.getElementById("demo").innerHTML = arr[0];
+var str="assd";
+var answer1 = 'It\'s alright';
+var answer2 = "He is called \"Johnny\"";
+var answer3='this\" is answer "three" well';
+ document.getElementById('demo').innerHTML=answer1+"<br/>"+answer2+"<br/>"+answer3+"<br/>"+typeof obj+"<br/>"+typeof str;
+names.split(',');names.split(' ');
+ document.getElementById('demo').innerHTML=my+"<br/>"+my.toString(16)+"<br/>"+my.toString(8)+"<br/>"+my.toString(2)+"<br/>"+Number.NEGATIVE_INFINITY;
+</script>
+
+    <div class="transition">
+        <div class="view">
+          <img src="img/Asif.jpg"/>
+             <div class="mask">  
+             <h2>Title</h2>  
+             <p>Your Text</p>  
+             <a href="#" class="info">Read More</a>  
+        </div>
+        
+    </div>
+    
+    
+        <div ng-app="">
+            <input type="text" ng-model="name">
+            {{name}}
+            
+        </div>
+</body>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ 
+       <script src="js/angular.min.js"></script>
+<!-- Mirrored from www.w3schools.com/js/tryit.asp?filename=tryjs_farenheit_to_celsius_2 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Nov 2014 11:41:17 GMT -->
+</html>
